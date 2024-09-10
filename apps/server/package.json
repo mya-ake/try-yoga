@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "start": "node dist/main.js",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "dependencies": {
+    "graphql": "16.9.0",
+    "graphql-tag": "2.12.6",
+    "graphql-yoga": "5.7.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/typescript": "4.0.9",
+    "@graphql-codegen/typescript-document-nodes": "4.0.9",
+    "@graphql-codegen/typescript-resolvers": "4.2.1",
+    "@types/node": "20",
+    "tsx": "4.19.0",
+    "typescript": "5.5.4"
+  }
+}

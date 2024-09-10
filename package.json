@@ -2,33 +2,14 @@
   "name": "try-yoga",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "tsx watch src/main.ts",
-    "build": "tsc --build",
-    "clean": "tsc --build --clean",
-    "start": "node dist/main.js",
-    "codegen": "graphql-codegen --config codegen.ts",
     "format": "biome format --write",
-    "lint": "biome lint ./src"
+    "lint": "biome lint"
   },
   "author": "mya-ake",
   "license": "MIT",
-  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
-  "dependencies": {
-    "graphql": "16.9.0",
-    "graphql-tag": "2.12.6",
-    "graphql-yoga": "5.7.0"
-  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "devDependencies": {
-    "@biomejs/biome": "1.8.3",
-    "@graphql-codegen/cli": "5.0.2",
-    "@graphql-codegen/typescript": "4.0.9",
-    "@graphql-codegen/typescript-document-nodes": "4.0.9",
-    "@graphql-codegen/typescript-resolvers": "4.2.1",
-    "@types/node": "20",
-    "tsx": "4.19.0",
-    "typescript": "5.5.4"
+    "@biomejs/biome": "1.8.3"
   }
 }
