@@ -5,6 +5,9 @@ export const userTypeDefinitions = typeDefinitions;
 
 export const userResolvers: Resolvers = {
 	Query: {
-		user: () => 'Hello user!',
+		user: () => ({
+			id: 'ID',
+			name: 'Name',
+		}),
 	},
 };
