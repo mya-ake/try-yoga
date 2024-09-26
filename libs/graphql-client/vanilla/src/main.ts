@@ -6,14 +6,18 @@ const client = new Client({
 	exchanges: [fetchExchange],
 });
 
-export const userDocument = graphql(`
+export const Document = graphql(`
   query getUser {
     user {
       id
       name
     }
+    book {
+      id
+      title 
+    }
   }
 `);
 
-const result = await client.query(userDocument, {}).toPromise();
+const result = await client.query(Document, {}).toPromise();
 console.log(result);

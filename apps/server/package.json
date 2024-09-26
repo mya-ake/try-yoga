@@ -12,6 +12,7 @@
     "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
+    "@graphql-modules/book": "workspace:*",
     "@graphql-modules/user": "workspace:*",
     "graphql": "16.9.0",
     "graphql-tag": "2.12.6",
