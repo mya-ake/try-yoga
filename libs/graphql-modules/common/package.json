@@ -1,5 +1,5 @@
 {
-  "name": "@graphql-modules/user",
+  "name": "@graphql-modules/common",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -13,7 +13,6 @@
     "@graphql-codegen/typescript": "4.0.9",
     "@graphql-codegen/typescript-document-nodes": "4.0.9",
     "@graphql-codegen/typescript-resolvers": "4.2.1",
-    "@graphql-modules/common": "workspace:*",
     "@types/node": "20",
     "graphql": "16.9.0",
     "graphql-tag": "2.12.6",

@@ -17,6 +17,9 @@ importers:
       '@graphql-modules/book':
         specifier: workspace:*
         version: link:../../libs/graphql-modules/book
+      '@graphql-modules/common':
+        specifier: workspace:*
+        version: link:../../libs/graphql-modules/common
       '@graphql-modules/user':
         specifier: workspace:*
         version: link:../../libs/graphql-modules/user
@@ -64,6 +67,9 @@ importers:
       '@graphql-modules/book':
         specifier: workspace:*
         version: link:../../graphql-modules/book
+      '@graphql-modules/common':
+        specifier: workspace:*
+        version: link:../../graphql-modules/common
       '@graphql-modules/user':
         specifier: workspace:*
         version: link:../../graphql-modules/user
@@ -110,6 +116,36 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
+  libs/graphql-modules/common:
+    devDependencies:
+      '@graphql-codegen/cli':
+        specifier: 5.0.2
+        version: 5.0.2(@parcel/watcher@2.4.1)(@types/node@20.16.5)(graphql@16.9.0)(typescript@5.5.4)
+      '@graphql-codegen/typescript':
+        specifier: 4.0.9
+        version: 4.0.9(graphql@16.9.0)
+      '@graphql-codegen/typescript-document-nodes':
+        specifier: 4.0.9
+        version: 4.0.9(graphql@16.9.0)
+      '@graphql-codegen/typescript-resolvers':
+        specifier: 4.2.1
+        version: 4.2.1(graphql@16.9.0)
+      '@types/node':
+        specifier: '20'
+        version: 20.16.5
+      graphql:
+        specifier: 16.9.0
+        version: 16.9.0
+      graphql-tag:
+        specifier: 2.12.6
+        version: 2.12.6(graphql@16.9.0)
+      tsup:
+        specifier: 8.2.4
+        version: 8.2.4(jiti@1.21.6)(tsx@4.19.0)(typescript@5.5.4)(yaml@2.5.1)
+      typescript:
+        specifier: 5.5.4
+        version: 5.5.4
+
   libs/graphql-modules/user:
     devDependencies:
       '@graphql-codegen/cli':
@@ -124,6 +160,9 @@ importers:
       '@graphql-codegen/typescript-resolvers':
         specifier: 4.2.1
         version: 4.2.1(graphql@16.9.0)
+      '@graphql-modules/common':
+        specifier: workspace:*
+        version: link:../common
       '@types/node':
         specifier: '20'
         version: 20.16.5
@@ -258,12 +297,14 @@ packages:
   '@babel/plugin-proposal-class-properties@7.18.6':
     resolution: {integrity: sha512-cumfXOF0+nzZrrN8Rf0t7M+tF6sZc7vhQwYQck9q1/5w2OExlD+b4v4RpMJFaV1Z7WcDRgO6FqvxqxGlwo+RHQ==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-object-rest-spread@7.20.7':
     resolution: {integrity: sha512-d2S98yCiLxDVmBmE8UjGcfPvNEUbA1U5q5WxaWFUGRzJSVAZqm5W6MbPct0jxnegUZ0niLeNX+IOzEs7wYg9Dg==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
@@ -1538,6 +1579,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -1636,6 +1678,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
